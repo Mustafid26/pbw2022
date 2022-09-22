@@ -2,6 +2,31 @@
 <html>
     <head>
         <title>Multimedia - HTML 5</title>
+        <style>
+            h2 {
+                background-color: white;
+                border: solid black;
+                text-align: center;
+            }
+            video {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-top:20px solid black;
+                border-right:1px solid black;
+                border-bottom:20px solid black;
+                border-left:1px solid black;
+            }
+            iframe {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-top:20px solid black;
+                border-right:1px solid black;
+                border-bottom:20px solid black;
+                border-left:1px solid black;
+            }
+        </style>
     </head>
     <body>
         <h2>Multimedia Video - HTML 5</h2>
@@ -16,7 +41,7 @@
             <button onclick="loopOff()" type="button">Loop Off</button>
             
         </p>
-        <video id="myVideo" width="450">
+        <video id="myVideo" width="450" class="video">
             <source type="video/mp4" src="media/movie.mp4">        
         </video>
         <h2>Embed Youtube</h2>
