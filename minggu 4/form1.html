@@ -5,23 +5,25 @@
         <style>
             h2 {
                 text-align: center;
-                display: inline;
                 border: solid;
-                margin-bottom: 0px;
-                margin-top: 0px;
             }
             body {
                 background: linear-gradient(90deg, rgba(255,137,13,100%) 0%, rgba(255,210,74,100%) 100%);
             }
             .logo{
-                width: 3%;
-                height: 3%;
-                display:inline;
+                width: 2%;
+                height: 2%;
                 border:solid;
-                margin-bottom: 0px;
+                float: left;
             }
             form {
                 border: solid;
+            }
+            table {
+                width: 100%;
+            }
+            td {
+                width: 25%;
             }
         </style>
     </head>
@@ -53,15 +55,16 @@
                     <td><input type="date" name="ftgl"></td>
                 </tr>
                 <tr>
-                    <td><b>Bidang Minat</b></td>
+                    <td><b>Bidang Minat : </b></td>
                     <td><input type="checkbox" name="fminat" value="web">Web Developer </td>
-                    <td><input type="checkbox" name="fminat" value="mobile">Web Developer </td>
-                    <td><input type="checkbox" name="fminat" value="data">Web Developer </td>
+                    <td><input type="checkbox" name="fminat" value="mobile">Mobile Developer </td>
+                    <td><input type="checkbox" name="fminat" value="data">Data Scientist</td>
                 </tr>
                 <tr>
                     <td><b>Lampiran Sertifikat : </b></td>
                     <td><input type="file" name="ffile"value="file"></td>
                 </tr>
+                <tr><td><input type="submit" value="Kirim"></td></tr>
             </table>
             
         </form>
