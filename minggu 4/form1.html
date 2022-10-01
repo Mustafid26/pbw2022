@@ -3,16 +3,15 @@
     <head>
         <title>FORM HTML</title>
         <style>
-            h2 {
-                text-align: center;
+            h1 {
                 border: solid;
             }
             body {
                 background: linear-gradient(90deg, rgba(255,137,13,100%) 0%, rgba(255,210,74,100%) 100%);
             }
             .logo{
-                width: 2%;
-                height: 2%;
+                width: 2.6%;
+                height: 2.6%;
                 border:solid;
                 float: left;
             }
@@ -29,7 +28,7 @@
     </head>
     <body>
         <img src="media/udinus.png" class="logo">
-        <h2>FORM MAHASISWA</h2>
+        <h1>FORM MAHASISWA</h1>
         <form class="fmhs" name="fmhs" action="proses.php" method="post">
             <table width="40%">
                 <tr>
@@ -52,17 +51,17 @@
                 </tr>
                 <tr>
                     <td><b>Tanggal Lahir : </b></td>
-                    <td><input type="date" name="ftgl"></td>
+                    <td><input type="date" name="ftgl" value="tgl_lahir"></td>
                 </tr>
                 <tr>
                     <td><b>Bidang Minat : </b></td>
-                    <td><input type="checkbox" name="fminat" value="web">Web Developer </td>
-                    <td><input type="checkbox" name="fminat" value="mobile">Mobile Developer </td>
-                    <td><input type="checkbox" name="fminat" value="data">Data Scientist</td>
+                    <td><input type="checkbox" name="fminat" value="web">Web Developer<br>
+                    <input type="checkbox" name="fminat" value="mobile">Mobile Developer<br> 
+                    <input type="checkbox" name="fminat" value="data">Data Scientist</td>
                 </tr>
                 <tr>
                     <td><b>Lampiran Sertifikat : </b></td>
-                    <td><input type="file" name="ffile"value="file"></td>
+                    <td><input type="file" name="flampiran" value="lampiran"></td>
                 </tr>
                 <tr><td><input type="submit" value="Kirim"></td></tr>
             </table>
