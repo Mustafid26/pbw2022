@@ -2,37 +2,7 @@
 <html>
     <head>
         <title>FORM HTML</title>
-        <style>
-            h1 {
-                border: solid;
-                border-bottom-color: rgba(166,124,0);
-                border-top-color:rgba(191,155,48);
-                border-right-color: rgba(255,191,0);
-                border-left-color: rgba(255,207,64);
-            }
-            body {
-                background: linear-gradient(90deg, rgba(0,87,231,100%) 0%, rgba(214,45,32,100%) 100%);
-            }
-            .logo{
-                width: 2.6%;
-                height: 2.6%;
-                border-top:solid;
-                border-left:solid;
-                float: left;
-                margin-right: 10px;
-                border-left-color: rgba(255,207,64);
-                border-top-color:rgba(191,155,48);
-            }
-            form {
-                border: solid;
-            }
-            table {
-                width: 60%;
-            }
-            td {
-                width: 25%;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <img src="media/udinus.png" class="logo">
@@ -41,16 +11,16 @@
             <table>
                 <tr>
                     <td><b>NIM : </b></td>
-                    <td><input type="number" name="fnim"></td>
+                    <td><input type="number" name="fnim" required></td>
                 </tr>
                 <tr>
                     <td><b>Nama :</b></td>
-                    <td><input type="text" name="fnama"></td>
+                    <td><input type="text" name="fnama" required></td>
                 </tr>
                 <tr>
                     <td><b>Program Studi :</b></td>
                     <td>
-                        <select name="fprodi">
+                        <select name="fprodi" required>
                             <option value="">Program Studi Anda</option>
                             <option value="a11">S1 - Teknik Informatika</option>
                             <option value="a12">S1 - Sistem Informasi</option>
@@ -59,17 +29,17 @@
                 </tr>
                 <tr>
                     <td><b>Tanggal Lahir : </b></td>
-                    <td><input type="date" name="ftgl" value="tgl_lahir"></td>
+                    <td><input type="date" name="ftgl" value="tgl_lahir" required></td>
                 </tr>
                 <tr>
                     <td><b>Bidang Minat : </b></td>
-                    <td><input type="checkbox" name="fminat" value="web">Web Developer<br>
-                    <input type="checkbox" name="fminat" value="mobile">Mobile Developer<br> 
-                    <input type="checkbox" name="fminat" value="data">Data Scientist</td>
+                    <td><input type="checkbox" name="fminat" value="web" required>Web Developer<br>
+                    <input type="checkbox" name="fminat" value="mobile" required>Mobile Developer<br> 
+                    <input type="checkbox" name="fminat" value="data" required>Data Scientist</td>
                 </tr>
                 <tr>
                     <td><b>Lampiran Sertifikat : </b></td>
-                    <td><input type="file" name="flampiran" value="lampiran"></td>
+                    <td><input type="file" name="flampiran" value="lampiran" required></td>
                 </tr>
                 <tr>
                     <td></td>

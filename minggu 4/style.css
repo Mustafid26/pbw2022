@@ -1,0 +1,25 @@
+h1 {
+    border: solid;
+    border-color: rgba(255,207,64);
+}
+body {
+    background: linear-gradient(90deg, rgba(0,87,231,100%) 0%, rgba(214,45,32,100%) 100%);
+}
+.logo{
+    width: 2.6%;
+    height: 2.6%;
+    border-top:solid;
+    border-left:solid;
+    float: left;
+    margin-right: 10px;
+    border-color: rgba(255,207,64);
+}
+form {
+    border: solid;
+}
+table {
+    width: 60%;
+}
+td {
+    width: 25%;
+}
