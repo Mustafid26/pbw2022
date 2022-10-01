@@ -5,21 +5,29 @@
         <style>
             h1 {
                 border: solid;
+                border-bottom-color: rgba(166,124,0);
+                border-top-color:rgba(191,155,48);
+                border-right-color: rgba(255,191,0);
+                border-left-color: rgba(255,207,64);
             }
             body {
-                background: linear-gradient(90deg, rgba(255,137,13,100%) 0%, rgba(255,210,74,100%) 100%);
+                background: linear-gradient(90deg, rgba(0,87,231,100%) 0%, rgba(214,45,32,100%) 100%);
             }
             .logo{
                 width: 2.6%;
                 height: 2.6%;
-                border:solid;
+                border-top:solid;
+                border-left:solid;
                 float: left;
+                margin-right: 10px;
+                border-left-color: rgba(255,207,64);
+                border-top-color:rgba(191,155,48);
             }
             form {
                 border: solid;
             }
             table {
-                width: 100%;
+                width: 60%;
             }
             td {
                 width: 25%;
@@ -30,7 +38,7 @@
         <img src="media/udinus.png" class="logo">
         <h1>FORM MAHASISWA</h1>
         <form class="fmhs" name="fmhs" action="proses.php" method="post">
-            <table width="40%">
+            <table>
                 <tr>
                     <td><b>NIM : </b></td>
                     <td><input type="number" name="fnim"></td>
@@ -63,7 +71,10 @@
                     <td><b>Lampiran Sertifikat : </b></td>
                     <td><input type="file" name="flampiran" value="lampiran"></td>
                 </tr>
-                <tr><td><input type="submit" value="Kirim"></td></tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Kirim"></td>
+                </tr>
             </table>
             
         </form>
