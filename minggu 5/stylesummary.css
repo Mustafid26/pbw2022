@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(90deg, rgba(0,87,231,100%) 0%, rgba(214,45,32,100%) 100%);
+}
+h1 {
+    background-color: lightblue;
+    border: solid; 
+    text-align: center;
+}
+.summary{
+    border: solid;
+    background-color: gray;
+    cursor: pointer;
+}
+details{
+    margin-left: 20px;
+}
+p{
+    border: solid black;
+    margin-right: 20px;
+    padding: 20px;
+}

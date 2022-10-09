@@ -1,6 +1,6 @@
 h1 {
     border: solid;
-    border-color: rgba(255,207,64);
+    border-color: rgb(64, 210, 255);
 }
 body {
     background: linear-gradient(90deg, rgba(0,87,231,100%) 0%, rgba(214,45,32,100%) 100%);
@@ -12,13 +12,13 @@ body {
     border-left:solid;
     float: left;
     margin-right: 10px;
-    border-color: rgba(255,207,64);
+    border-color: rgb(64, 210, 255);
 }
 form {
     border: solid;
 }
 table {
-    width: 60%;
+    width: 50%;
 }
 td {
     width: 25%;
