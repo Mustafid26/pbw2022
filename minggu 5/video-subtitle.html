@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia - HTML 5</title>
+        <style>
+            body {
+                background: linear-gradient(90deg, rgba(0,87,231,100%) 0%, rgba(214,45,32,100%) 100%);
+            }
+            h2 {
+                background-color: white;
+                border: solid black;
+                text-align: center;
+            }
+            video {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-top:20px solid black;
+                border-right:1px solid black;
+                border-bottom:20px solid black;
+                border-left:1px solid black;}
+        </style>
+    </head>
+    <body>
+        <p>
+            <h2>Video Subtitle - HTML 5</h2>
+            <video controls width="560" height="315">
+                <source type="video/mp4" src="media/video gadgetin.mp4">
+                <track default src="subtitle.vtt">
+            </video>
+        </p>
+
+    </body>
