@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/icon.ico">
+    <title>Contact</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Ubuntu';
+        }
+        nav a:hover{
+            background-color: black;
+            color: white;
+        }
+        nav a{
+            text-decoration: none;
+            margin: 20px;
+            color: black;
+        }
+        nav {
+            text-align: center;
+            font-family: 'Ubuntu';
+        }
+        header {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        hr {
+            width: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.pdf">Download CV</a>
+        <a href="kontak.html">Contact</a>
+        <a href="tentang.html">About</a>
+    </nav>
+    <hr />
+    <h1>CONTACT</h1>
+    <hr />
+    <header>
+        <h2>HUBUNGI AKU DENGAN CARA DI BAWAH INI</h2>
+        <form name="fkontak"action="proses.php" method="post">
+            <label for="email">Email :</label>
+            <input id="email "type="email" placeholder="Masukkan Alamat Email">
+            <br />
+            <label for="pesan">Pesan Anda : </label>
+            <br />
+            <textarea name="message" id="pesan" cols="139" rows="10" placeholder="Masukkan Pesan Anda"></textarea>
+            <br />
+            <input type="submit" value="Kirim">
+    </form>
+    </header>
+</body>
+</html>
