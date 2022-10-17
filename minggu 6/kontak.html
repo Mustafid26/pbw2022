@@ -5,15 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/icon.ico">
     <title>Contact</title>
     <style>
         body {
             background-color: lightgray;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         h1 {
             text-align: center;
             font-family: 'Ubuntu';
+        }
+        h2 {
+            text-align: center;
         }
         nav a:hover{
             background-color: black;
@@ -35,12 +45,46 @@
         hr {
             width: 1000px;
         }
+        .name {
+            margin-left: 255px;
+        }
+        .lastname {
+            margin-left: 255px;
+        }
+        #lastname {
+            margin-left: 170px;
+        }
+        #name {
+            margin-left: 255px;
+        }
+        .email{
+            margin-left: 255px;
+        }
+        #email {
+            margin-left: 255px;
+        }
+        footer {
+            margin-top: 169px;
+            bottom: 0;
+            background-color: black;
+            color: white ;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h3 {
+            font-family: 'Rubik', sans-serif;
+            text-align: center;
+        }
+        .copyright{
+            font-family: 'Rubik', sans-serif;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <nav>
         <a href="index.html">Home</a>
-        <a href="cv.pdf">Download CV</a>
+        <a href="#" onclick="window.print()">Print CV</a>
         <a href="kontak.html">Contact</a>
         <a href="about.html">About</a>
     </nav>
@@ -50,15 +94,26 @@
     <header>
         <h2>HUBUNGI AKU DENGAN CARA DI BAWAH INI</h2>
         <form name="fkontak"action="proses.php" method="post">
-            <label for="email">Email :</label>
-            <input id="email "type="email" placeholder="Masukkan Alamat Email">
+            <label class="name" for="name">Nama Depan : </label>
+            <label class="lastname" for="lastname">Nama Belakang : </label> 
+            <br /> 
+            <input type="text" id="name" placeholder="Masukkan Nama Depan">
+            <input type="text" name="name" id="lastname" placeholder="Masukkan Nama Belakang"> 
+            <br />
+            <label class="email" for="email">Email :</label> 
+            <br/>
+            <input id="email"type="email" placeholder="Masukkan Alamat Email">
             <br />
             <label for="pesan">Pesan Anda : </label>
             <br />
-            <textarea name="message" id="pesan" cols="139" rows="10" placeholder="Masukkan Pesan Anda"></textarea>
+            <textarea name="message" id="pesan" cols="137" rows="7" placeholder="Masukkan Pesan Anda"></textarea>
             <br />
             <input type="submit" value="Kirim">
     </form>
     </header>
+    <footer>
+        <h3>Kaisalana</h3>
+        <p class="copyright">copyright &copy; 2022</p>
+    </footer>
 </body>
 </html>

@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/icon.ico">
     <title>About</title>
     <style>
         body {
             background-color: lightgray;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         nav a:hover{
             background-color: black;
@@ -35,12 +42,28 @@
         hr {
             width: 1000px;
         }
+        footer {
+            margin-top: 349px;
+            bottom: 0;
+            background-color: black;
+            color: white ;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h3 {
+            font-family: 'Rubik', sans-serif;
+            text-align: center;
+        }
+        .copyright{
+            font-family: 'Rubik', sans-serif;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <nav>
         <a href="index.html">Home</a>
-        <a href="cv.pdf">Download CV</a>
+        <a href="#" onclick="window.print()">Print CV</a>
         <a href="kontak.html">Contact</a>
         <a href="about.html">About</a>
     </nav>
@@ -53,5 +76,9 @@
         <h2>Tentangku</h2>
         <p>Hai, saya Mustafid Kaisalana berasal dari Kota Salatiga. Saya sekarang berada di bangku perkuliahan dengan jurusan Teknik Informatika di Universitas Dian Nuswantoro Semarang tepatnya berada di sekitar Tugu Muda.</p>
     </article>
+    <footer>
+        <h3>Kaisalana</h3>
+        <p class="copyright">copyright &copy; 2022</p>
+    </footer>
 </body>
 </html>
