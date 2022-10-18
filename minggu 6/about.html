@@ -8,28 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/icon.ico">
     <title>About</title>
     <style>
         body {
             background-color: lightgray;
             margin: 0px;
+            margin-top: 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
         nav a:hover{
-            background-color: black;
             color: white;
         }
         nav a{
             text-decoration: none;
             margin: 20px;
-            color: black;
+            color: wheat;
         }
         nav {
             text-align: center;
             font-family: 'Ubuntu';
+            background-color: black;
+            margin-left: 150px;
+            margin-right: 150px;
         }
         header {
             text-align: center;
@@ -38,6 +44,9 @@
         article {
             margin-left: 150px;
             margin-right: 150px;
+        }
+        h1 {
+            font-size: 50px;
         }
         hr {
             width: 1000px;
@@ -53,10 +62,21 @@
         h3 {
             font-family: 'Rubik', sans-serif;
             text-align: center;
+            font-size: 20px;
         }
         .copyright{
             font-family: 'Rubik', sans-serif;
             text-align: center;
+        }
+        video {
+            width: 30%; 
+            border: solid black;
+        }
+        .hobi {
+            text-align: center;
+            font-family: 'Archivo Narrow', sans-serif;
+            font-family: 'Rubik', sans-serif;
+            font-size: 13px;
         }
     </style>
 </head>
@@ -73,8 +93,12 @@
     </header>
     <hr />
     <article>
-        <h2>Tentangku</h2>
+        <h3>Tentangku</h3>
         <p>Hai, saya Mustafid Kaisalana berasal dari Kota Salatiga. Saya sekarang berada di bangku perkuliahan dengan jurusan Teknik Informatika di Universitas Dian Nuswantoro Semarang tepatnya berada di sekitar Tugu Muda.</p>
+        <br />
+        <h3>Hobi Saya</h3>
+        <center><video id="videovalo" autoplay loop src="media/valo.mp4"></video></center>
+        <p class="hobi"><b>Bermain Game</b></p>
     </article>
     <footer>
         <h3>Kaisalana</h3>
