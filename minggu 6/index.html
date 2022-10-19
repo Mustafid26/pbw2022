@@ -14,7 +14,6 @@
         body {
             background-color: lightgray;
             margin: 0px;
-            margin-top: 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -24,19 +23,27 @@
             border: solid;
         }
         nav a:hover{
-            color: white;
+            background-color: white;
+            color: black;
         }
         nav a{
             text-decoration: none;
             margin: 20px;
-            color: wheat;
+            color: whitesmoke;
         }
         nav {
             text-align: center;
             font-family: 'Ubuntu';
             background-color: black;
-            margin-left: 150px;
-            margin-right: 150px;
+            padding: 20px;
+        }
+        .logo {
+            width: 44px;
+            float: left;
+        }
+        .logo2 {
+            width: 44px;
+            float: right;
         }
         header {
             text-align: center;
@@ -78,13 +85,16 @@
 </head>
 <body>
     <nav>
+        <img class="logo" src="media/kai.png" alt="logo">
+        <img class="logo2" src="media/kai.png" alt="logo">
+        <br />
         <a href="index.html">Home</a>
         <a href="#" onclick="window.print()">Print CV</a>
         <a href="kontak.html">Contact</a>
         <a href="about.html">About</a>
     </nav>
 
-    <hr />
+
     <header>
         <h1>MUSTAFID KAISALANA</h1>
         <img src="media/foto.jpeg" alt="fotodiri">
@@ -98,7 +108,7 @@
         <p>Hai saya Mustafid Kaisalana adalah calon web developer masa depan, saat ini saya sedang di bangku perkuliahan dan mempelajari HTML 5. Berikut adalah beberapa kemampuan dan pengalaman saya selama 1 tahun terakhir.</p>
     </article>
     <div>
-        <table align="center">
+        <table>
             <thead>
                 <tr>
                     <th>Kemampuan</th>
@@ -110,15 +120,15 @@
                     <td>
                         <ul>
                             <li>Web Develompent</li>
-                            <li>Mobile Development</li>
+                            <li>Application Development</li>
                             <li>Network Development</li>
                         </ul>
                     </td>
                     <td>
                         <ul>
-                            <li>Merancang sebuah website perusahaan</li>
-                            <li>Membuat aplikasi penunjang kehidupan masyarakat</li>
-                            <li>Memelihara sebuah jaringan di daerah</li>
+                            <li>Merancang sebuah website pribadi</li>
+                            <li>Membuat bot di aplikasi discord</li>
+                            <li>Memelihara sebuah jaringan di suatu daerah</li>
                         </ul>
                     </td>
                 </tr>

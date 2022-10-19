@@ -17,25 +17,32 @@
         body {
             background-color: lightgray;
             margin: 0px;
-            margin-top: 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
         nav a:hover{
-            color: white;
+            background-color: white;
+            color: black;
         }
         nav a{
             text-decoration: none;
             margin: 20px;
-            color: wheat;
+            color: whitesmoke;
         }
         nav {
             text-align: center;
             font-family: 'Ubuntu';
             background-color: black;
-            margin-left: 150px;
-            margin-right: 150px;
+            padding: 20px;
+        }
+        .logo {
+            width: 50px;
+            float: left;
+        }
+        .logo2 {
+            width: 50px;
+            float: right;
         }
         header {
             text-align: center;
@@ -68,7 +75,11 @@
             font-family: 'Rubik', sans-serif;
             text-align: center;
         }
-        video {
+        .video1 {
+            width: 30%; 
+            border: solid black;
+        }
+        .video2 {
             width: 30%; 
             border: solid black;
         }
@@ -82,12 +93,15 @@
 </head>
 <body>
     <nav>
+        <img class="logo" src="media/kai.png" alt="logo">
+        <img class="logo2" src="media/kai.png" alt="logo">
+        <br />
         <a href="index.html">Home</a>
         <a href="#" onclick="window.print()">Print CV</a>
         <a href="kontak.html">Contact</a>
         <a href="about.html">About</a>
     </nav>
-    <hr />
+    
     <header>
         <h1>About</h1>
     </header>
@@ -98,14 +112,14 @@
         <br />
         <h3>Hobi Saya</h3>
         <center>
-            <video id="videovalo" autoplay loop src="media/valo.mp4"></video>
+            <video class="video1" id="videovalo" autoplay loop src="media/valo.mp4"></video>
         </center>
         <p class="hobi"><b>Bermain Game</b></p>
         <br />
         <br />
         <br />
         <center>
-            <video id="videovalo" autoplay loop src="media/music.mp4"></video>
+            <video class="video2" id="videomusik" autoplay loop src="media/music.mp4"></video>
         </center>
         <p class="hobi"><b>Mendengarkan Musik</b></p>
     </article>
@@ -115,7 +129,9 @@
     </footer>
     <script>
         var vid = document.getElementById('videovalo');
-        vid.volume = 0.2;
+        vid.volume = 0.1;
+        var vid = document.getElementById('videomusik');
+        vid.volume = 0.1;
     </script>
 </body>
 </html>
